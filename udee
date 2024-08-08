@@ -1,0 +1,18 @@
+class MyCustomException extends Exception{
+  public MyCustomException(string message){
+    super(message);
+  }
+}
+public class UDEE{
+  public static void main(string[]args) 
+  {
+    try {
+      int age=15;
+      if(age<18){
+        throw new MyCustomException("age must be 18or above to proceed");
+  } catch(Mycustomexception e){
+        System.out.println("custom Exception caught:"+e.getmessage());
+    }
+  }
+}
+}
