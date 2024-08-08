@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+class Main{
+  public static void main(String[] args){
+    ArrayList<Object> objectList = new ArrayList<>();
+    objectList.add(42);//Integer
+    objectList.add("hello,");//String
+    objectList.add(3.14);//Double
+    objectList.add(true);//Boolean
+    for(Object obj :objectList){
+      System.out.println(obj);
+    }
+  }
+}
